@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LearnEase - Learn with Ease</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@500;700&family=Great+Vibes&family=Lato&family=Poppins:wght@300&family=Roboto:wght@300;400&family=Satisfy&display=swap" rel="stylesheet">
+    <style>
+        /* Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Global Styles */
+body {
+    font-family: 'Dancing Script', cursive;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+/* Navbar */
+.navbar {
+    background-color: #333;
+    color: #fff;
+    padding: 20px 0;
+}
+.navbar .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    font-size: 24px;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+}
+
+.nav-links li {
+    margin-right: 20px;
+}
+
+.nav-links a {
+    color: #fff;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+.nav-links a:hover {
+    color: #ff9900;
+}
+
+/* Hero */
+.hero {
+    background-image: url('https://images.unsplash.com/photo-1595147389795-37094173bfd8?w=400&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8N3x8aW1hZ2V8ZW58MHwwfDB8fHww');
+    background-size: cover;
+    background-position: center;
+    color: #fff;
+    text-align: center;
+    padding: 100px 0;
+}
+
+.hero h1 {
+    font-size: 48px;
+    margin-bottom: 20px;
+}
+
+.hero p {
+    font-size: 18px;
+    margin-bottom: 40px;
+}
+
+.btn {
+    padding: 10px 20px;
+    background-color: #ff9900;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
+
+.btn:hover {
+    background-color: #ff6600;
+}
+
+/* Features */
+.features {
+    padding: 80px 0;
+    text-align: center;
+}
+
+.features h2 {
+    font-size: 36px;
+    margin-bottom: 40px;
+}
+
+.feature {
+    margin-bottom: 40px;
+}
+
+.feature h3 {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+/* Footer */
+.footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 20px 0;
+}
+
+    </style>
+</head>
+<body>
+    <nav class="navbar">
+        <div class="container">
+            <h1 class="logo">LearnEase</h1>
+            <ul class="nav-links">
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Courses</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <header class="hero">
+        <div class="container">
+            <h1>Welcome to LearnEase</h1>
+            <p>Explore our wide range of courses and start learning today!</p>
+            <a href="#" class="btn">Browse Courses</a>
+        </div>
+    </header>
+
+    <section class="features">
+        <div class="container">
+            <h2>Why Choose LearnEase?</h2>
+            <div class="feature">
+                <h3>Flexible Learning</h3>
+                <p>Learn at your own pace, anytime, anywhere.</p>
+            </div>
+            <div class="feature">
+                <h3>Expert Instructors</h3>
+                <p>Our courses are taught by industry experts.</p>
+            </div>
+            <div class="feature">
+                <h3>Wide Range of Courses</h3>
+                <p>Explore various topics from programming to art.</p>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2024 LearnEase. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.9.1/gsap.min.js"></script>
+    <script src="app.js">
+        gsap.registerPlugin(ScrollTrigger);
+
+gsap.from(".navbar", {
+    duration: 1,
+    y: "-100%",
+    opacity: 0,
+    ease: "power4.out"
+});
+
+gsap.from(".hero", {
+    scrollTrigger: {
+        trigger: ".hero",
+        start: "top center",
+        end: "bottom center",
+        toggleActions: "restart none none none"
+    },
+    duration: 1,
+    opacity: 0,
+    y: 50,
+    ease: "power4.out"
+});
+
+gsap.from(".features .feature", {
+    scrollTrigger: {
+        trigger: ".features",
+        start: "top center",
+        end: "bottom center",
+        toggleActions: "restart none none none"
+    },
+    duration: 1,
+    opacity: 0,
+    y: 50,
+    stagger: 0.3,
+    ease: "power4.out"
+});
+
+    </script>
+</body>
+</html>

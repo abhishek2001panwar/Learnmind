@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>About Us - LearnMinds</title>
+  <link rel="stylesheet" href="/stylesheets/about.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@1,700&display=swap" rel="stylesheet">
+  <script src="https://unpkg.com/gsap@3.9.1/dist/gsap.min.js"></script>
+</head>
+<body>
+
+  <header>
+    <h1>About LearnMinds</h1>
+    <p>Your Gateway to Knowledge and Success</p>
+  </header>
+  <nav>
+    <a href="/" class="signup">Home</a>
+    <a href="/courses" class="signup">Courses</a>
+    <a href="/contact" class="signup">Contact-Us</a>
+    <a href="/about" class="signup">About-Us</a>
+    <a href="/signup" class="signup">Sign Up</a>
+    <!-- <a href="/login" class="login">Log In</a> -->
+  </nav>
+
+  <section class="about-content" id="mission">
+    <h2>Our Mission</h2>
+    <p>At LearnMinds, we are committed to providing accessible and high-quality education. Our mission is to empower individuals by offering diverse courses and fostering a collaborative learning community.</p>
+  </section>
+
+  <section class="about-content" id="vision">
+    <h2>Our Vision</h2>
+    <p>We envision a world where learning knows no boundaries. Through innovative courses and cutting-edge technology, we strive to be a catalyst for personal and professional growth, creating opportunities for all.</p>
+  </section>
+
+  <section class="about-content" id="team">
+    <h2>Meet Our Team</h2>
+    <div class="team-member" id="teamMember1">
+      <img src="/images/abhi.jpg" alt="Team Member 1">
+  
+      <h3>Abhishek Panwar</h3>
+      <p>Co-Founder & CEO</p>
+    </div>
+
+   
+    <!-- Add more team members as needed -->
+  </section>
+<!-- 
+  <section class="about-content" id="values">
+    <h2>Our Core Values</h2>
+    <ul>
+      <li>Excellence</li>
+      <li>Accessibility</li>
+      <li>Innovation</li>
+      <li>Community</li>
+      <li>Continuous Learning</li>
+    </ul>
+  </section> -->
+
+  <footer>
+    <p>&copy; 2023 LearnMinds. All rights reserved.</p>
+    <!-- Add additional footer content as needed -->
+  </footer>
+
+  <script>
+    gsap.from("header", { opacity: 0, y: -50, duration: 1 });
+    gsap.from(".about-content", { opacity: 0, y: 50, duration: 1, stagger: 0.5 });
+    gsap.from(".team-member", { opacity: 0, y: 50, duration: 1, stagger: 0.5 });
+    gsap.from("footer", { opacity: 0, y: 20, duration: 1, delay: 0.5 });
+  </script>
+
+</body>
+</html>

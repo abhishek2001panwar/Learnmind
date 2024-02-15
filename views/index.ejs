@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>LearnHub - Your Online Learning Platform</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@500;700&family=Great+Vibes&family=Lato&family=Poppins:wght@300&family=Roboto:wght@300;400&family=Satisfy&display=swap" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@500;700&family=Great+Vibes&family=Poppins:wght@300&family=Roboto:wght@300;400&family=Satisfy&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@1,700&display=swap" rel="stylesheet">
+  <script src="https://unpkg.com/gsap@3.9.1/dist/gsap.min.js"></script>
+  <style>
+    body {
+      font-family: "lato";
+      margin: 0;
+      padding: 0;
+      background-color: #f8f9fa;
+
+    }
+
+    header {
+      background-color: #e2e7ec;
+      padding: 20px;
+      text-align: center;
+      color: #dadada;
+    }
+
+    nav {
+      background-color: #dadada;
+      padding: 20px;
+      text-align: center;
+    }
+
+    /* nav a {
+      color: #443535;
+      text-decoration: none;
+      padding: 10px;
+      margin: 0 10px;
+      font-size: 20px;
+      transition: color 0.3s;
+    } */
+
+    nav a:hover {
+      color: #007bff;
+    }
+
+    nav a.signup, nav a.login {
+      /* background-color: #007bff; */
+      text-decoration: none;
+      color: #ffffff;
+      padding: 7px 10px;
+      border-radius: 10px;
+      transition: background-color 0.3s;
+      font-size:medium;
+      margin: 7px;
+     
+    }
+
+    nav a.signup:hover, nav a.login:hover {
+      background-color: #0056b3;
+    }
+
+    section, .about-section {
+      max-width: 800px;
+      margin: 50px auto;
+      padding: 20px;
+      background-color: #ffffff;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+      border-radius: 8px;
+      text-align: center;
+      opacity: 0;
+    }
+
+    h1 {
+      color: #dadada;
+    }
+
+    p {
+      color: #555555;
+      font-size: large;
+    }
+
+    .cta-button {
+      display: inline-block;
+      background-color: #007bff;
+      color: #ffffff;
+      padding: 10px 20px;
+      font-size: 18px;
+      text-decoration: none;
+      border-radius: 5px;
+      transition: background-color 0.3s;
+    }
+
+    .cta-button:hover {
+      background-color: #0056b3;
+    }
+
+    .about-image {
+      max-width: 100%;
+      border-radius: 8px;
+      margin-bottom: 20px;
+    }
+
+    footer {
+      background-color: #dadada;
+      color: #ffffff;
+      padding: 20px 0;
+      text-align: center;
+    }
+    header {
+      background-color: #007bff;
+      padding: 20px;
+      text-align: center;
+      color: #244ac9;
+      position: relative; /* Add position relative to the header */
+    }
+
+    header img {
+      max-width: 100px; /* Adjust the width of the logo */
+      position: absolute;
+      top: 50%;
+      left: 20px; /* Adjust the left position of the logo */
+      transform: translateY(-50%);
+    }
+    @media only screen and (max-width: 600px) {
+    nav a {
+      display: block;
+      text-align: center;
+      padding: 10px 0;
+    }
+  }
+  </style>
+</head>
+<body>
+
+  <header>
+
+    <h1>Welcome to LearnHub</h1>
+    <p>Your Ultimate Online Learning Platform</p>
+  </header>
+
+  <nav>
+    <a href="/" class="signup">Home</a>
+    <a href="/courses" class="signup">Courses</a>
+    <a href="/contact" class="signup">Contact-Us</a>
+    <a href="/about" class="signup">About-Us</a>
+    <a href="/profile" class="signup">Profile</a>
+    <a href="/signup" class="signup">Sign Up</a>
+    <!-- <a href="/login" class="login">Log In</a> -->
+  </nav>
+
+  <section id="animatedSection">
+    <h1>Explore and Expand Your Knowledge</h1>
+    <p>
+      Discover a world of possibilities. LearnMinds offers expertly crafted courses on a niche topic. Join our community for a journey of continuous learning.
+    </p>
+    <p>
+      Unlock the door to new opportunities and enhance your skills with our engaging and dynamic learning experiences.
+    </p>
+    <a href="/courses" class="cta-button">Browse Courses</a>
+  </section>
+
+  <div class="about-section" id="animatedAboutSection">
+    <h2>About LearnMinds</h2>
+    <img src="https://images.unsplash.com/photo-1546410531-bb4caa6b424d?q=80&w=1471&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="About LearnMinds" class="about-image">
+    <p>
+      LearnMinds is your gateway to knowledge and success. Immerse yourself in diverse courses and collaborative learning. Unlock your potential with expert-led content.
+    </p>
+  </div>
+
+  <footer>
+    <p>&copy; 2023 LearnMinds. All rights reserved.</p>
+    <!-- Add additional footer content as needed -->
+  </footer>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js" integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.min.js" integrity="sha384-cuYeSxntonz0PPNlHhBs68uyIAVpIIOZZ5JqeqvYYIcEL727kskC66kF92t6Xl2V" crossorigin="anonymous"></script>
+  <script>
+    // GSAP Animations
+    gsap.to("#animatedSection, #animatedAboutSection", { opacity: 1, y: 0, duration: 1, stagger: 0.5 });
+    gsap.from(".cta-button", { opacity: 0, x: -50, duration: 1, delay: 2 });
+  </script>
+
+</body>
+</html>

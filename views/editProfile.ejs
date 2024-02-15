@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>LearnHub - Edit Profile</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@1,700&display=swap" rel="stylesheet">
+  <script src="https://unpkg.com/gsap@3.9.1/dist/gsap.min.js"></script>
+  <style>
+    /* Include your existing CSS styles here */
+    body {
+      font-family: "lato";
+      margin: 0;
+      padding: 0;
+      background-color: #c2c4c5;
+    }
+
+    header {
+      background-color: #3084d7;
+      padding: 20px;
+      text-align: center;
+      color: #dadada;
+    }
+
+    nav {
+      background-color: #dadada;
+      padding: 20px;
+      text-align: center;
+    }
+
+    /* nav a {
+      color: #443535;
+      text-decoration: none;
+      padding: 10px;
+      margin: 0 10px;
+      font-size: 20px;
+      transition: color 0.3s;
+    } */
+
+    nav a:hover {
+      color: #007bff;
+    }
+
+    nav a.signup, nav a.login {
+      /* background-color: #007bff; */
+      text-decoration: none;
+      color: #ffffff;
+      padding: 7px 10px;
+      border-radius: 10px;
+      transition: background-color 0.3s;
+      font-size:medium;
+      margin: 7px;
+     
+    }
+
+    nav a.signup:hover, nav a.login:hover {
+      background-color: #0056b3;
+    }
+
+    /* Add any additional styles specific to the edit profile page */
+    form {
+      max-width: 400px;
+      margin: 0 auto;
+      background-color: #ebe4e4;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+      border-radius: 8px;
+      padding: 29px;
+      text-align: center;
+    }
+
+    label {
+      display: block;
+      margin-bottom: 10px;
+      color: #555555;
+      font-size: medium;
+    }
+
+    input {
+      width: 100%;
+      padding: 10px;
+      margin-bottom: 15px;
+      border: 1px solid #ddd;
+      border-radius: 5px;
+    }
+
+    button {
+      background-color: #007bff;
+      color: #ffffff;
+      padding: 10px 20px;
+      font-size: 18px;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+
+    button:hover {
+      background-color: #0056b3;
+    }
+    @media only screen and (max-width: 600px) {
+    nav a {
+      display: block;
+      text-align: center;
+      padding: 10px 0;
+    }
+  }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>Welcome to LearnHub</h1>
+    <p>Your Ultimate Online Learning Platform</p>
+  </header>
+
+  <nav>
+    <a href="/" class="signup">Home</a>
+    <a href="/courses" class="signup">Courses</a>
+    <a href="/contact" class="signup">Contact-Us</a>
+    <a href="/about" class="signup">About-Us</a>
+    <a href="/profile" class="signup">Profile</a>
+    <a href="/signup" class="signup">Sign Up</a>
+    <!-- <a href="/login" class="login">Log In</a> -->
+  </nav>
+
+  <section>
+    <form id="editProfileForm" action="/editprofile" method="get">
+      <label for="skills">Skills:</label>
+      <input type="text" id="skills" name="skills" placeholder="Enter your skills">
+
+      <label for="areasOfInterest">Areas of Interest:</label>
+      <input type="text" id="areasOfInterest" name="areasOfInterest" placeholder="Enter your areas of interest">
+
+      <a href="/profile" ><button type="button">Save Changes</button></a>
+    </form>
+  </section>
+
+  <script>
+    // GSAP Animations
+    gsap.from("#editProfileForm", { opacity: 0, y: -50, duration: 1 });
+
+    // Function to handle form submission (replace with actual submission logic)
+    // function submitForm() {
+    //   alert("Form submitted! (Replace this with your actual logic)");
+    // }
+  </script>
+
+</body>
+</html>

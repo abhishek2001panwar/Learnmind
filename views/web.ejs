@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Web Development Roadmap - Your Learning Platform</title>
+  <link rel="stylesheet" href="/stylesheets/web.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@1,700&display=swap" rel="stylesheet">
+  <script src="https://unpkg.com/gsap@3.9.1/dist/gsap.min.js"></script>
+</head>
+<body>
+
+  <header>
+    <h1>Your Learning Platform</h1>
+    <p>Explore and Expand Your Knowledge</p>
+  </header>
+
+  <nav>
+    <a href="/" class="signup">Home</a>
+    <a href="/courses" class="signup">Courses</a>
+    <!-- Add more navigation links as needed -->
+  </nav>
+
+  <section id="roadmapSection">
+    <h2>Web Development Roadmap</h2>
+
+    <div class="milestone" id="htmlMilestone">
+      <img src="https://media.istockphoto.com/id/1424809056/photo/getter-then-less-then-icon-3d-render-concept-for-web-development.webp?b=1&s=170667a&w=0&k=20&c=tfXp1GUsHBtpyI3EDzqD4V7d-88a0Dzw0n7Bom7yFjk=" alt="HTML Icon">
+      <h3>HTML Basics</h3>
+      <p>Learn the fundamentals of HTML. Understand document structure, tags, and elements.</p>
+    </div>
+
+    <div class="milestone" id="cssMilestone">
+      <img src="https://media.istockphoto.com/id/1432240580/photo/html-website-code-interface-on-laptop-3d-illustration-computer.webp?b=1&s=170667a&w=0&k=20&c=6_yWugylTdsiM7qUpWlzaaucIJMxQXQpSm8mUInTWVg=" alt="CSS Icon">
+      <h3>CSS Styling</h3>
+      <p>Explore CSS for styling web pages. Learn about selectors, layout, and responsive design.</p>
+    </div>
+
+    <div class="milestone" id="jsMilestone">
+      <img src="https://media.istockphoto.com/id/1156837650/photo/javascript-code-computer-language-programming-internet-text-editor-components-display-screen.jpg?s=612x612&w=0&k=20&c=pMRRYB9XwMF2M5Z5cfgprREyZf6xo5Li-jP0qDrFF-Y=" alt="JavaScript Icon">
+      <h3>JavaScript Fundamentals</h3>
+      <p>Master the basics of JavaScript. Understand variables, control structures, and functions.</p>
+    </div>
+
+    <div class="milestone" id="frameworkMilestone">
+      <img src="https://media.istockphoto.com/id/1367689683/photo/top-view-of-laptop-with-text-react.jpg?s=612x612&w=0&k=20&c=SPdwpcJzkED8hEseytd5cuSZuwUlZG_ZQZ0g90BZNK8=" alt="Framework Icon">
+      <h3>Frontend Frameworks</h3>
+      <p>Explore popular frontend frameworks like React or Vue.js. Build interactive user interfaces.</p>
+    </div>
+
+    <div class="milestone" id="backendMilestone">
+      <img src="https://media.istockphoto.com/id/1147805360/photo/web-programming-language-choosing-concept-dice-with-js-php-and-python-text-on-faces.jpg?s=612x612&w=0&k=20&c=SDKq68QHn_V5wkBnUuL2EW39sHW0Ii3iJV5sSkMsFnU=" alt="Backend Icon">
+      <h3>Backend Development</h3>
+      <p>Learn about server-side development. Explore technologies like Node.js and Express.</p>
+    </div>
+
+    <div class="milestone" id="databaseMilestone">
+      <img src="https://media.istockphoto.com/id/1336250828/photo/data-center-female-it-specialist-using-laptop-server-farm-cloud-computing-and-cyber-security.jpg?s=612x612&w=0&k=20&c=zYmufTgBgc2w1Fwbd_zZWtmadLlYfw8O53IHuwqLOI8=" alt="Database Icon">
+      <h3>Database Management</h3>
+      <p>Understand database concepts and work with databases such as MongoDB or SQL.</p>
+    </div>
+
+    <div class="milestone" id="deploymentMilestone">
+      <img src="https://media.istockphoto.com/id/1501109828/photo/devops-software-development-and-it-operations-software-engineer-project-manager-working-in.jpg?s=612x612&w=0&k=20&c=2lIVd66m-HBblW1tg9h3LkOa1M0YiIsPr5pXpjU7WA8=" alt="Deployment Icon">
+      <h3>Deployment</h3>
+      <p>Learn about deploying web applications. Understand hosting, domain management, and server configurations.</p>
+    </div>
+  </section>
+
+  <footer>
+    <p>&copy; 2023 Your Learning Platform. All rights reserved.</p>
+    <!-- Add additional footer content as needed -->
+  </footer>
+
+  <script>
+    gsap.from("#roadmapSection h2", { opacity: 0, y: 20, duration: 1 });
+    gsap.from("#roadmapSection .milestone", { opacity: 0, y: 50, duration: 1, stagger: 0.5 });
+    gsap.from("nav a", { opacity: 0, y: -20, duration: 1, delay: 0.5 });
+    gsap.from("header p", { opacity: 0, y: 20, duration: 1, delay: 0.5 });
+    gsap.from("footer p", { opacity: 0, y: 20, duration: 1, delay: 1 });
+  </script>
+
+</body>
+</html>

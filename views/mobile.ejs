@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mobile App Development Roadmap - Your Learning Platform</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@1,700&display=swap" rel="stylesheet">
+  
+  <style>
+    /* Add this CSS to your cybersecurity.css file */
+
+body {
+  font-family: "lato";
+  margin: 0;
+  padding: 0;
+  background-color: #f8f9fa;
+}
+
+header {
+  background-color: #007bff;
+  padding: 20px;
+  text-align: center;
+  color: #ffffff;
+}
+
+nav {
+  background-color: #dadada;
+  padding: 20px;
+  text-align: center;
+}
+
+nav a {
+  color: #443535;
+  text-decoration: none;
+  padding: 10px;
+  margin: 0 10px;
+  font-size: 20px;
+  transition: color 0.3s;
+}
+
+nav a:hover {
+  color: #007bff;
+}
+
+nav a.signup, nav a.login {
+  text-decoration: none;
+  color: #ffffff;
+  padding: 7px 10px;
+  border-radius: 10px;
+  transition: background-color 0.3s;
+  font-size: medium;
+  margin: 7px;
+}
+
+nav a.signup:hover, nav a.login:hover {
+  background-color: #0056b3;
+}
+
+section, .about-section {
+  max-width: 800px;
+  margin: 50px auto;
+  padding: 20px;
+  background-color: #ffffff;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+  text-align: center;
+  opacity: 24;
+}
+
+h1 {
+  color: #057ef8;
+}
+
+p {
+  color: #555555;
+  font-size: large;
+}
+
+.cta-button {
+  display: inline-block;
+  background-color: #007bff;
+  color: #ffffff;
+  padding: 10px 20px;
+  font-size: 18px;
+  text-decoration: none;
+  border-radius: 5px;
+  transition: background-color 0.3s;
+}
+
+.cta-button:hover {
+  background-color: #0056b3;
+}
+
+.about-image {
+  max-width: 100%;
+  border-radius: 8px;
+  margin-bottom: 20px;
+}
+
+footer {
+  background-color: #dadada;
+  color: #ffffff;
+  padding: 20px 0;
+  text-align: center;
+}
+
+#roadmapSection {
+  max-width: 800px;
+  margin: 50px auto;
+  text-align: left;
+}
+
+.milestone {
+  margin-bottom: 30px;
+}
+
+.milestone img {
+  max-width: 100px;
+  margin-bottom: 10px;
+  border-radius: 50%;
+  object-fit: cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.milestone h3 {
+  color: #057ef8;
+}
+
+.milestone p {
+  color: #555555;
+  font-size: large;
+}
+@media only screen and (max-width: 600px) {
+    nav a {
+      display: block;
+      text-align: center;
+      padding: 10px 0;
+    }
+  }
+  </style>
+  <script src="https://unpkg.com/gsap@3.9.1/dist/gsap.min.js"></script>
+</head>
+<body>
+
+  <header>
+    <h1>Your Learning Platform</h1>
+    <p>Explore and Expand Your Knowledge</p>
+  </header>
+
+  <nav>
+    <a href="/" class="signup">Home</a>
+    <a href="/courses" class="signup">Courses</a>
+    <!-- Add more navigation links as needed -->
+  </nav>
+<!-- ... (previous code) ... -->
+
+<section id="roadmapSection">
+  <h2>Mobile App Development Roadmap</h2>
+
+  <div class="milestone" id="programmingMilestone">
+    <img src="https://source.unsplash.com/800x400/?programming" alt="Programming Icon">
+    <h3>Programming Basics</h3>
+    <p>Get started with programming. Learn a language like Java, Kotlin (for Android) or Swift (for iOS).</p>
+  </div>
+
+  <div class="milestone" id="frameworkMilestone">
+    <img src="https://source.unsplash.com/800x400/?framework" alt="Framework Icon">
+    <h3>Mobile App Frameworks</h3>
+    <p>Explore popular mobile app frameworks like React Native, Flutter, or Xamarin.</p>
+  </div>
+
+  <div class="milestone" id="uiMilestone">
+    <img src="https://source.unsplash.com/800x400/?ui" alt="UI/UX Icon">
+    <h3>UI/UX Design</h3>
+    <p>Understand the principles of UI/UX design. Create visually appealing and user-friendly interfaces.</p>
+  </div>
+
+  <div class="milestone" id="apiMilestone">
+    <img src="https://source.unsplash.com/800x400/?api" alt="API Icon">
+    <h3>API Integration</h3>
+    <p>Learn how to integrate APIs into your mobile app for fetching data and services.</p>
+  </div>
+
+  <div class="milestone" id="databaseMilestone">
+    <img src="https://source.unsplash.com/800x400/?database" alt="Database Icon">
+    <h3>Database Management</h3>
+    <p>Understand mobile app data storage. Explore databases like SQLite, Firebase, or Realm.</p>
+  </div>
+
+  <div class="milestone" id="testingMilestone">
+    <img src="https://source.unsplash.com/800x400/?testing" alt="Testing Icon">
+    <h3>Testing and Debugging</h3>
+    <p>Learn testing strategies and tools to ensure the reliability of your mobile app.</p>
+  </div>
+
+  <div class="milestone" id="deploymentMilestone">
+    <img src="https://source.unsplash.com/800x400/?deployment" alt="Deployment Icon">
+    <h3>App Deployment</h3>
+    <p>Understand the process of deploying mobile apps to app stores. Explore app release and updates.</p>
+  </div>
+</section>
+
+<!-- ... (remaining code) ... -->
+
+
+  <footer>
+    <p>&copy; 2023 Your Learning Platform. All rights reserved.</p>
+    <!-- Add additional footer content as needed -->
+  </footer>
+
+  <script>
+    gsap.from("#roadmapSection h2", { opacity: 0, y: 20, duration: 1 });
+    gsap.from("#roadmapSection .milestone", { opacity: 0, y: 50, duration: 1, stagger: 0.5 });
+    gsap.from("nav a", { opacity: 0, y: -20, duration: 1, delay: 0.5 });
+    gsap.from("header p", { opacity: 0, y: 20, duration: 1, delay: 0.5 });
+    gsap.from("footer p", { opacity: 0, y: 20, duration: 1, delay: 1 });
+  </script>
+
+</body>
+</html>

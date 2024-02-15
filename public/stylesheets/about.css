@@ -1,0 +1,94 @@
+body {
+    font-family: "lato";
+    margin: 0;
+    padding: 0;
+    background-color: #f8f9fa;
+  }
+  @media only screen and (max-width: 600px) {
+    nav a {
+      display: block;
+      text-align: center;
+      padding: 10px 0;
+    }
+  } 
+  header {
+    background-color: #007bff;
+    padding: 20px;
+    text-align: center;
+    color: #ffffff;
+  }
+  nav {
+    background-color: #dadada;
+    padding: 20px;
+    text-align: center;
+  }
+
+  /* nav a {
+    color: #443535;
+    text-decoration: none;
+    padding: 10px;
+    margin: 0 10px;
+    font-size: 20px;
+    transition: color 0.3s;
+  } */
+
+  nav a:hover {
+    color: #007bff;
+  }
+
+  nav a.signup, nav a.login {
+    /* background-color: #007bff; */
+    text-decoration: none;
+    color: #ffffff;
+    padding: 7px 10px;
+    border-radius: 10px;
+    transition: background-color 0.3s;
+    font-size:medium;
+    margin: 7px;
+   
+  }
+
+  nav a.signup:hover, nav a.login:hover {
+    background-color: #0056b3;
+  }
+
+  .about-content {
+    max-width: 800px;
+    margin: 50px auto;
+    padding: 20px;
+    background-color: #ffffff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    text-align: center;
+    opacity: 24;
+  }
+  
+  h2 {
+    color: #057ef8;
+  }
+  
+  p {
+    color: #555555;
+    font-size: large;
+  }
+  
+  .team-member {
+    margin-top: 20px;
+  }
+  
+  .team-member img {
+    max-width: 100%;
+    border-radius: 10px;
+    height: 350px;
+    object-fit: cover;
+  }
+  
+  footer {
+    background-color: #dadada;
+    color: #ffffff;
+    padding: 20px 0;
+    text-align: center;
+  }
+  
+  /* Add more styles and animations as needed */
+  

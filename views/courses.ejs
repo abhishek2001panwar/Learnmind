@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Technology and Programming Courses - Your Learning Platform</title>
+  <link rel="stylesheet" href="/stylesheets/courses.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@1,700&display=swap" rel="stylesheet">
+  <script src="https://unpkg.com/gsap@3.9.1/dist/gsap.min.js"></script>
+</head>
+<body>
+
+  <header>
+    <h1>Your Learning Platform</h1>
+    <p>Explore and Expand Your Knowledge</p>
+  </header>
+
+  <nav>
+    <a href="/" class="signup">Home</a>
+    <a href="/courses" class="signup">Courses</a>
+    <a href="/contact" class="signup">Contact-Us</a>
+    <a href="/about" class="signup">About-Us</a>
+    <a href="/signup" class="signup">Sign Up</a>
+    <!-- <a href="/login" class="login">Log In</a> -->
+  </nav>
+
+  <section id="courseSection">
+    <div class="course">
+      <img src="/images/online-learning-2100-1055_0.webp" alt="Web Development">
+      <h2>Web Development</h2>
+      <p>Master the art of building websites and web applications. Learn HTML, CSS, JavaScript, and more.</p>
+      <a href="/web" class="cta-button">Enroll Now</a>
+    </div>
+
+    <div class="course">
+      <img src="/images/online-learning-2100-1055_0.webp" alt="Mobile App Development">
+      <h2>Mobile App Development</h2>
+      <p>Create mobile apps for iOS and Android platforms. Explore frameworks like React Native and Flutter.</p>
+      <a href="/mobile" class="cta-button">Enroll Now</a>
+    </div>
+
+    <div class="course">
+      <img src="/images/online-learning-2100-1055_0.webp" alt="Data Science">
+      <h2>Data Science</h2>
+      <p>Dive into the world of data. Learn statistical analysis, machine learning, and data visualization.</p>
+      <a href="#" class="cta-button">Enroll Now</a>
+    </div>
+
+    <div class="course">
+      <img src="/images/online-learning-2100-1055_0.webp" alt="Artificial Intelligence">
+      <h2>Artificial Intelligence</h2>
+      <p>Explore the field of AI. Understand machine learning algorithms, natural language processing, and more.</p>
+      <a href="#" class="cta-button">Enroll Now</a>
+    </div>
+
+    <div class="course">
+      <img src="/images/online-learning-2100-1055_0.webp" alt="Cybersecurity">
+      <h2>Cybersecurity</h2>
+      <p>Protect systems and data from cyber threats. Learn ethical hacking, network security, and cryptography.</p>
+      <a href="#" class="cta-button">Enroll Now</a>
+    </div>
+  </section>
+
+  <footer>
+    <p>&copy; 2023 Your Learning Platform. All rights reserved.</p>
+    <!-- Add additional footer content as needed -->
+  </footer>
+
+  <script>
+    gsap.from("#courseSection .course", { opacity: 0, y: 50, duration: 1, stagger: 0.5 });
+    gsap.from("nav a", { opacity: 0, y: -20, duration: 1, delay: 0.5 });
+    gsap.from("header p", { opacity: 0, y: 20, duration: 1, delay: 0.5 });
+    gsap.from("footer p", { opacity: 0, y: 20, duration: 1, delay: 1 });
+  </script>
+
+</body>
+</html>

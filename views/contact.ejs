@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact Us - LearnMinds</title>
+  <link rel="stylesheet" href="/stylesheets/contact.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@1,700&display=swap" rel="stylesheet">
+  <script src="https://unpkg.com/gsap@3.9.1/dist/gsap.min.js"></script>
+</head>
+<body>
+
+  <header>
+    <h1>Contact Us</h1>
+    <p>Get in touch with LearnMinds</p>
+  </header>
+  <nav>
+    <a href="/" class="signup">Home</a>
+    <a href="/courses" class="signup">Courses</a>
+    <a href="/contact" class="signup">Contact-Us</a>
+    <a href="/about" class="signup">About-Us</a>
+    <a href="/signup" class="signup">Sign Up</a>
+    <!-- <a href="/login" class="login">Log In</a> -->
+  </nav>
+  <section id="contactSection">
+    <div class="contact-info">
+      <h2>Our Information</h2>
+      <p>Email: info@learnminds.com</p>
+      <p>Phone: +1 (123) 456-7890</p>
+      <p>Address: 123 Main Street, Cityville, Country</p>
+    </div>
+
+    <div class="contact-form">
+      <h2>Send us a Message</h2>
+      <form id="messageForm" action="/submit_contact_form" method="post" >
+        <label for="name">fullName:</label>
+        <input type="text" id="name" name="fullname" required>
+
+        <label for="email">Your Email:</label>
+        <input type="email" id="email" name="email" required>
+
+        <label for="message">Your Message:</label>
+        <textarea id="message" name="message" required></textarea>
+
+        <button type="submit">Send Message</button>
+      </form>
+    </div>
+  </section>
+
+  <footer>
+    <p>&copy; 2023 LearnMinds. All rights reserved.</p>
+  </footer>
+
+  <script src="/scripts/contact.js"></script>
+</body>
+</html>
