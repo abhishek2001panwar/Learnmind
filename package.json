@@ -2,6 +2,9 @@
   "name": "learnmind",
   "version": "0.0.0",
   "main":"app.cjs",
+  "engines": {
+    "node": "14.x"
+  },
   "scripts": {
     "start": "node app.cjs"
   },
