@@ -1,9 +1,9 @@
 {
-  "name": "realtimechatapp",
+  "name": "learnmind",
   "version": "0.0.0",
-  "private": true,
+  "main":"app.cjs",
   "scripts": {
-    "start": "node ./bin/www"
+    "start": "node app.cjs"
   },
   "dependencies": {
     "bcrypt": "^5.1.1",
