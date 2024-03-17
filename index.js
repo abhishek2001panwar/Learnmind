@@ -1,9 +1,9 @@
 var express = require('express');
 var router = express.Router();
-var userModel = require("./users");
-var editModel = require("./editprofile");
-const Query = require('./query');
-const AdminUser = require("./admin");
+var userModel = require("./routes/users");
+var editModel = require("./routes/editprofile");
+const Query = require('./routes/query');
+const AdminUser = require("./routes/admin");
 const passport = require('passport');
 const localStrategy = require("passport-local");
 passport.use(new localStrategy(userModel.authenticate()));

@@ -1,7 +1,7 @@
 {
   "name": "learnmind",
   "version": "0.0.0",
-  "main":"app.cjs",
+  "main": "app.cjs",
   "engines": {
     "node": "18.x"
   },
