@@ -52,3 +52,8 @@ app.use(function(err, req, res, next) {
   res.status(err.status || 500);
   res.render('error');
 });
+const Port = 3000 ;
+app.listen(3000 , ()=>{
+  console.log('listening on port ',Port);
+});
+module.exports = app;

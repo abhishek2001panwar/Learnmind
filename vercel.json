@@ -1,6 +1,6 @@
 {
   "version": 2,
   "builds": [
-    { "src": "index.js", "use": "@vercel/node" }
+    { "src": "app.cjs", "use": "@vercel/node" }
   ]
 }

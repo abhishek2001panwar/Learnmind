@@ -1,10 +1,9 @@
 var express = require('express');
 var router = express.Router();
-var app = express();
-var userModel = require("./routes/users");
-var editModel = require("./routes/editprofile");
-const Query = require('./routes/query');
-const AdminUser = require("./routes/admin");
+var userModel = require("./users");
+var editModel = require("./editprofile");
+const Query = require('./query');
+const AdminUser = require("./admin");
 const passport = require('passport');
 const localStrategy = require("passport-local");
 passport.use(new localStrategy(userModel.authenticate()));
@@ -190,10 +189,5 @@ router.post('/login', async (req, res) => {
     res.status(500).json({ message: error.message });
   }
 });
-const Port = 3000 ;
-app.listen(3000 , ()=>{
-  console.log('listening on port ',Port);
-});
 
 module.exports = router;
-// Add other routes and controllers as needed
