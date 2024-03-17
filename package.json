@@ -6,7 +6,8 @@
     "node": "18.x"
   },
   "scripts": {
-    "start": "node index.cjs"
+    "start": "node index.cjs",
+    "build": "cp -r src/views public && cp static/* public"
   },
   "dependencies": {
     "bcrypt": "^5.1.1",
