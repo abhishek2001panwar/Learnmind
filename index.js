@@ -1,5 +1,6 @@
 var express = require('express');
 var router = express.Router();
+var app = express();
 var userModel = require("./routes/users");
 var editModel = require("./routes/editprofile");
 const Query = require('./routes/query');
@@ -188,6 +189,10 @@ router.post('/login', async (req, res) => {
   } catch (error) {
     res.status(500).json({ message: error.message });
   }
+});
+const Port = 3000 ;
+app.listen(3000 , ()=>{
+  console.log('listening on port ',Port);
 });
 
 module.exports = router;
